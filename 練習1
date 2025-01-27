@@ -1,0 +1,8 @@
+@startuml
+
+Client    --> Server : requestData()
+Server    --> Database: queryData()
+Database  --> Server : returnData()
+Server    --> Client : responseData()
+
+@enduml

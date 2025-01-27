@@ -1,0 +1,9 @@
+@startuml
+
+[*] --> Offstate: 照明
+Offstate --> Onstate: スイッチを押す
+Onstate --> Offstate: タイマー経過またはスイッチを押す
+Onstate --> Offstate: 周囲が明るくなる
+Offstate --> Onstate: 周囲が暗くなる
+
+@enduml
